@@ -1,0 +1,348 @@
+* {
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  list-style: none;
+}
+#banner {
+  .all {
+    @include _main($margin: 46px 0 0 0, $padding: 9px, $cursor: pointer);
+  }
+  .all_in {
+    @include _main($border-radius: 22px,$padding: 39px,$border: 1px solid #d6d6d6);
+    .up_side {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      @include _main($position: relative,$width: 107px,$height: 89px,$margin: 0 auto);
+      .fa-solid {
+        @include _main($position: absolute, $top: 29px,$left: 44px,$color: $main_color);
+      }
+    }
+    .down_side {
+      h4 {
+        font-size: 19px;
+        @include _main($text-align: center, $margin: -9px 0 10px 0);
+      }
+      p {
+        font-size: 14px;
+        @include _main($text-align: center, $color:$secondary_color);
+      }
+    }
+    transition: 0.3s ease-in-out;
+    &:hover {
+      box-shadow: 4px 4px 12px -1px rgba(0, 0, 0, 0.75);
+    }
+  }
+}
+#middle {
+  padding-top: 90px;
+  .row {
+    justify-content: center;
+  }
+  .text {
+    @include _main($width: 555px, $padding: 35px 0 0 0);
+  }
+  .img {
+    object-fit: contain;
+    img {
+      @include _main($width: 555px, $height: 520px, $cursor: pointer);
+    }
+  }
+  .head {
+    h2 {
+      padding-bottom: 10px;
+    }
+    p {
+      font-size: 18px;
+      padding-bottom: 16px;
+    }
+  }
+  .list {
+    ul {
+      padding: 0;
+    }
+    li {
+      line-height: 32px;
+    }
+    .icon_tick {
+      display: flex;
+      align-items: center;
+      .fa-solid {
+        font-weight: 900;
+        padding-right: 14px;
+        color: blue;
+      }
+    }
+    .get {
+      display: flex;
+      @include _main($margin: 18px 0 0 23px, $width: 30%, $height: 50px);
+      .fora {
+        color: #fff;
+        background-color: rgb(67, 67, 255);
+      }
+      a {
+        text-decoration: none;
+        transition: 0.3s all;
+        @include _main($border: 1px solid transparent, $border-radius: 10px, $padding: 10px 9px 12px 9px,$text-align: center);   
+        &:hover {
+          transform: translateY(-3px);
+          @include _main($color: $fifth_color,$border: 1px solid rgb(67, 67, 255),$back-color: $main_color);
+        }
+      }
+    }
+  }
+}
+#footer {
+  @include _main($margin:50px 0 0 0, $padding:40px 0 47px 0, $back-color:$third_color);
+  @media (min-width: 1400px) {
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+      max-width: 1180px !important;
+    }
+  }
+  .section-heading-center {
+    width: 70%;
+    margin: 0 auto;
+  }
+  h1 {
+    margin-bottom: 40px;
+  }
+  p {
+    margin-bottom: 40px;
+  }
+  .col_in {
+    @include _main($width: 360px, $border: 1px solid black,$back-color: $main_color, $padding: 0px 33px, $border-radius:5px, $margin:0 0 20px 0);
+    .img {
+      @include _main($width:60px , $margin: 40px auto 20px auto);
+      img {
+        @include _main($width:60px, $height:60px, $object_f:cover);
+      }
+    }
+    .middle_fields {
+      h5 {
+        text-align: center;
+      }
+      p {
+        text-align: center;
+        font-size: 14px;
+      }
+    }
+    .down_fields {
+      p {
+        text-align: center;
+        font-size: 14px;
+      }
+      .gett {
+        display: flex;
+        @include _main($margin:18px auto 25px auto, $width:50%, $height:50px);
+        .forAA {
+          color: blue;
+          background-color: #fff;
+        }
+        a {
+         text-decoration: none;
+          transition: 0.3s all;
+          @include _main($margin:0px auto, $border:1px solid blue, $border-radius:10px, $padding:10px 25px 12px 25px, $text-align:center);
+          &:hover {
+            color: #fff;
+            background-color: rgb(67, 67, 255);
+          }
+        }
+      }
+    }
+  }
+}
+#back {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+@include _main($width:100%, $height:370px, $position:relative);
+  &::before {
+    content: "";
+    z-index: 1;
+    @include _main($width:100%, $height:370px, $position:absolute, $top:0px, $left:0px, $back-color:$sixth_color);
+  }
+  .index {
+    z-index: 232;
+    .section-heading-center {
+      @include _main($width:50%, $margin: 70px auto);
+      h1 {
+        @include _main($color:$main_color, $margin: 0 0 20px 0, $text-align:center);
+      }
+      p {
+        color: #fff;
+      }
+    }
+    .gett {
+      display: flex;
+      @include _main($width:50%, $height:50px, $margin: 18px auto 25px auto);
+      .forAA {
+        color: blue;
+        background-color: #fff;
+      }
+      a:nth-child(1) {
+        text-decoration: none;
+        transition: 0.1s all;
+        @include _main($margin:0 -70px 0 auto, $back-color:$main_color, $border-radius:10px, $text-align:center, $padding:10px 25px 12px 25px, $border:1px solid white);
+        &:nth-child(1):hover {
+          background-color: transparent;
+          border: 1px solid white;
+          color: #fff;
+        }
+      }
+      a:nth-child(2) {
+        text-decoration: none;
+        transition: 0.1s all;
+        background-color: transparent;
+        @include _main($margin:0 auto, $border-radius:10px, $text-align:center, $padding:10px 25px 12px 25px, $border:1px solid white, $color:$main_color);
+        &:nth-child(2):hover {
+          background-color: white;
+          color: blue;
+        }
+      }
+    }
+  }
+}
+#allist {
+  .row {
+    justify-content: center;
+  }
+  .head {
+    width: 60%;
+    margin: 0 auto;
+    h1 {
+      margin: 60px 0px 20px 0px;
+    }
+    p {
+      margin: 10px 0px 60px 0px;
+    }
+  }
+  .card {
+    @include _main($border:2px solid black, $border-radius:15px, $padding: 38px 30px, $position:relative);
+    .card_inner {
+      .upside {
+        text-align: center;
+        margin-bottom: 16px;
+        h5 {
+          margin-bottom: 10px;
+        }
+        &::after {
+          content: "";
+          display: block;
+          bottom: 0;
+          background: radial-gradient(
+            at center center,
+            rgb(0, 115, 236) 0px,
+            rgba(255, 255, 255, 0) 75%
+          );
+          @include _main($width:50%, $margin:9px 0 0 25%, $height:1px );
+        }
+      }
+      .downside {
+        ul {
+          @include _main($text-align:center, $margin:0px, $padding:0px)
+        }
+        li {
+          line-height: 35px;
+          font-size: 13px;
+        }
+        .gett {
+display: flex;
+
+@include _main($height:50px, $margin: 17px auto 25px auto);
+          .forAA {
+            color: blue;
+            background-color: #fff;
+            font-size: 14px;
+          }
+          a {
+           text-decoration: none;
+          transition: 0.3s all;
+          border: 1px solid blue;
+            @include _main($text-align:center, $margin:0px auto, $padding:10px 13px 11px 13px, $back-color:$main_color, $border-radius:10px);
+            &:hover {
+              @include _main($back-color:$fifth_color, $border:1px solid blue, $color:$main_color);
+            }
+          }
+        }
+      }
+    }
+    &:hover {
+      border: 2px solid blue;
+    }
+  }
+  .card2 {
+    overflow: hidden;
+@include _main($border:2px solid blue, $padding:38px 30px, $position:relative, $border-radius:15px);
+    .card_inner {
+      .upside {
+        text-align: center;
+        margin-bottom: 16px;
+        h5 {
+          margin-bottom: 10px;
+          position: relative;
+
+          span {
+           line-height: 16px;
+            transform: rotate(49deg);
+            box-shadow: rgb(6 113 236) 0px 0px 0px 3px,
+              rgb(0 0 0 / 60%) 0px 21px 5px -18px;
+            background: rgb(3, 114, 236);
+            color: rgb(255, 255, 255);
+            font-size: 11px;
+            @include _main($width:246px, $height:21px, $position:absolute, $top:11px, $right:1px, $left:207px, $text-align:center);
+          }
+        }
+        &::after {
+          content: "";
+          display: block;
+          bottom: 0;
+        background: radial-gradient(
+            at center center,
+            rgb(0, 115, 236) 0px,
+            rgba(255, 255, 255, 0) 75%
+          );
+          @include _main($width:50%, $height:1px, $margin:8px 0 0 25%, $top:11px, $right:1px, $left:207px, $text-align:center);
+        }
+      }
+      .downside {
+        ul {
+          text-align: center;
+          margin: 0;
+          padding: 0;
+          @include _main($text-align:center, $margin:0, $padding:0);
+        }
+        li {
+          line-height: 35px;
+          font-size: 13px;
+        }
+        .gett {
+          display: flex;
+          justify-content: center;
+          @include _main($width:50%, $height:50px, $margin: 18px auto 25px auto);
+          .forAA {
+            color: white;
+            background-color: blue;
+            font-size: 14px;
+          }
+          a {
+            text-decoration: none;
+            transition: 0.3s all;
+            @include _main($border-radius:10px, $padding:10px 13px 11px 13px, $text-align: center, $border: 1px solid blue);
+            &:hover {
+              @include _main($back-color:$seven_color, $border: 1px solid blue, $color:$fifth_color)
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.forp {
+  margin-top: 80px;
+}

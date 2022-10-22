@@ -1,0 +1,421 @@
+* {
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  list-style: none;
+}
+
+#banner .all {
+  margin: 46px 0 0 0;
+  padding: 9px;
+  cursor: pointer;
+}
+#banner .all_in {
+  padding: 39px;
+  border: 1px solid #d6d6d6;
+  border-radius: 22px;
+  transition: 0.3s ease-in-out;
+}
+#banner .all_in .up_side {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 107px;
+  height: 89px;
+  margin: 0 auto;
+  position: relative;
+}
+#banner .all_in .up_side .fa-solid {
+  position: absolute;
+  top: 29px;
+  left: 44px;
+  color: #fff;
+}
+#banner .all_in .down_side h4 {
+  font-size: 19px;
+  margin: -9px 0 10px 0;
+  text-align: center;
+}
+#banner .all_in .down_side p {
+  font-size: 14px;
+  color: #707070;
+  text-align: center;
+}
+#banner .all_in:hover {
+  box-shadow: 4px 4px 12px -1px rgba(0, 0, 0, 0.75);
+}
+
+#middle {
+  padding-top: 90px;
+}
+#middle .row {
+  justify-content: center;
+}
+#middle .text {
+  width: 555px;
+  padding: 35px 0 0 0;
+}
+#middle .img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#middle .img img {
+  width: 555px;
+  height: 520px;
+  cursor: pointer;
+}
+#middle .head h2 {
+  padding-bottom: 10px;
+}
+#middle .head p {
+  font-size: 18px;
+  padding-bottom: 16px;
+}
+#middle .list ul {
+  padding: 0;
+}
+#middle .list li {
+  line-height: 32px;
+}
+#middle .list .icon_tick {
+  display: flex;
+  align-items: center;
+}
+#middle .list .icon_tick .fa-solid {
+  font-weight: 900;
+  padding-right: 14px;
+  color: blue;
+}
+#middle .list .get {
+  display: flex;
+  width: 30%;
+  height: 50px;
+  margin: 18px 0 0 23px;
+}
+#middle .list .get .fora {
+  color: #fff;
+  background-color: rgb(67, 67, 255);
+}
+#middle .list .get a {
+  text-decoration: none;
+  transition: 0.3s all;
+  padding: 10px 9px 12px 9px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  text-align: center;
+}
+#middle .list .get a:hover {
+  transform: translateY(-3px);
+  color: blue;
+  border: 1px solid rgb(67, 67, 255);
+  background-color: #fff;
+}
+
+#footer {
+  margin: 50px 0 0 0;
+  padding: 40px 0 47px 0;
+  background-color: #f5f5f5;
+}
+@media (min-width: 1400px) {
+  #footer .container,
+#footer .container-lg,
+#footer .container-md,
+#footer .container-sm,
+#footer .container-xl,
+#footer .container-xxl {
+    max-width: 1180px !important;
+  }
+}
+#footer .section-heading-center {
+  width: 70%;
+  margin: 0 auto;
+}
+#footer h1 {
+  margin-bottom: 40px;
+}
+#footer p {
+  margin-bottom: 40px;
+}
+#footer .col_in {
+  width: 360px;
+  margin: 0 0 20px 0;
+  padding: 0px 33px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #fff;
+}
+#footer .col_in .img {
+  width: 60px;
+  margin: 40px auto 20px auto;
+}
+#footer .col_in .img img {
+  width: 60px;
+  height: 60px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#footer .col_in .middle_fields h5 {
+  text-align: center;
+}
+#footer .col_in .middle_fields p {
+  text-align: center;
+  font-size: 14px;
+}
+#footer .col_in .down_fields p {
+  text-align: center;
+  font-size: 14px;
+}
+#footer .col_in .down_fields .gett {
+  display: flex;
+  width: 50%;
+  height: 50px;
+  margin: 18px auto 25px auto;
+}
+#footer .col_in .down_fields .gett .forAA {
+  color: blue;
+  background-color: #fff;
+}
+#footer .col_in .down_fields .gett a {
+  text-decoration: none;
+  transition: 0.3s all;
+  margin: 0px auto;
+  padding: 10px 25px 12px 25px;
+  border: 1px solid blue;
+  border-radius: 10px;
+  text-align: center;
+}
+#footer .col_in .down_fields .gett a:hover {
+  color: #fff;
+  background-color: rgb(67, 67, 255);
+}
+
+#back {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 370px;
+  position: relative;
+}
+#back::before {
+  content: "";
+  z-index: 1;
+  width: 100%;
+  height: 370px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(15, 93, 208, 0.88);
+}
+#back .index {
+  z-index: 232;
+}
+#back .index .section-heading-center {
+  width: 50%;
+  margin: 70px auto;
+}
+#back .index .section-heading-center h1 {
+  margin: 0 0 20px 0;
+  color: #fff;
+  text-align: center;
+}
+#back .index .section-heading-center p {
+  color: #fff;
+}
+#back .index .gett {
+  display: flex;
+  width: 50%;
+  height: 50px;
+  margin: 18px auto 25px auto;
+}
+#back .index .gett .forAA {
+  color: blue;
+  background-color: #fff;
+}
+#back .index .gett a:nth-child(1) {
+  text-decoration: none;
+  transition: 0.1s all;
+  margin: 0 -70px 0 auto;
+  padding: 10px 25px 12px 25px;
+  border: 1px solid white;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #fff;
+}
+#back .index .gett a:nth-child(1):nth-child(1):hover {
+  background-color: transparent;
+  border: 1px solid white;
+  color: #fff;
+}
+#back .index .gett a:nth-child(2) {
+  text-decoration: none;
+  transition: 0.1s all;
+  background-color: transparent;
+  margin: 0 auto;
+  padding: 10px 25px 12px 25px;
+  color: #fff;
+  border: 1px solid white;
+  border-radius: 10px;
+  text-align: center;
+}
+#back .index .gett a:nth-child(2):nth-child(2):hover {
+  background-color: white;
+  color: blue;
+}
+
+#allist .row {
+  justify-content: center;
+}
+#allist .head {
+  width: 60%;
+  margin: 0 auto;
+}
+#allist .head h1 {
+  margin: 60px 0px 20px 0px;
+}
+#allist .head p {
+  margin: 10px 0px 60px 0px;
+}
+#allist .card {
+  padding: 38px 30px;
+  position: relative;
+  border: 2px solid black;
+  border-radius: 15px;
+}
+#allist .card .card_inner .upside {
+  text-align: center;
+  margin-bottom: 16px;
+}
+#allist .card .card_inner .upside h5 {
+  margin-bottom: 10px;
+}
+#allist .card .card_inner .upside::after {
+  content: "";
+  display: block;
+  bottom: 0;
+  background: radial-gradient(at center center, rgb(0, 115, 236) 0px, rgba(255, 255, 255, 0) 75%);
+  width: 50%;
+  height: 1px;
+  margin: 9px 0 0 25%;
+}
+#allist .card .card_inner .downside ul {
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+#allist .card .card_inner .downside li {
+  line-height: 35px;
+  font-size: 13px;
+}
+#allist .card .card_inner .downside .gett {
+  display: flex;
+  height: 50px;
+  margin: 17px auto 25px auto;
+}
+#allist .card .card_inner .downside .gett .forAA {
+  color: blue;
+  background-color: #fff;
+  font-size: 14px;
+}
+#allist .card .card_inner .downside .gett a {
+  text-decoration: none;
+  transition: 0.3s all;
+  border: 1px solid blue;
+  margin: 0px auto;
+  padding: 10px 13px 11px 13px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #fff;
+}
+#allist .card .card_inner .downside .gett a:hover {
+  color: #fff;
+  border: 1px solid blue;
+  background-color: blue;
+}
+#allist .card:hover {
+  border: 2px solid blue;
+}
+#allist .card2 {
+  overflow: hidden;
+  padding: 38px 30px;
+  position: relative;
+  border: 2px solid blue;
+  border-radius: 15px;
+}
+#allist .card2 .card_inner .upside {
+  text-align: center;
+  margin-bottom: 16px;
+}
+#allist .card2 .card_inner .upside h5 {
+  margin-bottom: 10px;
+  position: relative;
+}
+#allist .card2 .card_inner .upside h5 span {
+  line-height: 16px;
+  transform: rotate(49deg);
+  box-shadow: rgb(6, 113, 236) 0px 0px 0px 3px, rgba(0, 0, 0, 0.6) 0px 21px 5px -18px;
+  background: rgb(3, 114, 236);
+  color: rgb(255, 255, 255);
+  font-size: 11px;
+  width: 246px;
+  height: 21px;
+  position: absolute;
+  top: 11px;
+  left: 207px;
+  text-align: center;
+  right: 1px;
+}
+#allist .card2 .card_inner .upside::after {
+  content: "";
+  display: block;
+  bottom: 0;
+  background: radial-gradient(at center center, rgb(0, 115, 236) 0px, rgba(255, 255, 255, 0) 75%);
+  width: 50%;
+  height: 1px;
+  margin: 8px 0 0 25%;
+  top: 11px;
+  left: 207px;
+  text-align: center;
+  right: 1px;
+}
+#allist .card2 .card_inner .downside ul {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+#allist .card2 .card_inner .downside li {
+  line-height: 35px;
+  font-size: 13px;
+}
+#allist .card2 .card_inner .downside .gett {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  height: 50px;
+  margin: 18px auto 25px auto;
+}
+#allist .card2 .card_inner .downside .gett .forAA {
+  color: white;
+  background-color: blue;
+  font-size: 14px;
+}
+#allist .card2 .card_inner .downside .gett a {
+  text-decoration: none;
+  transition: 0.3s all;
+  padding: 10px 13px 11px 13px;
+  border: 1px solid blue;
+  border-radius: 10px;
+  text-align: center;
+}
+#allist .card2 .card_inner .downside .gett a:hover {
+  color: blue;
+  border: 1px solid blue;
+  background-color: rgb(255, 255, 255);
+}
+
+.forp {
+  margin-top: 80px;
+}/*# sourceMappingURL=main.css.map */
